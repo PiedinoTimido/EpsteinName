@@ -1,0 +1,161 @@
+body {
+    background: radial-gradient(1200px 800px at 15% 0%, #1a2230 0%, #11151b 45%, #0c0f14 100%);
+    color: #f4f7ff;
+    font-family: "Space Grotesk", "Trebuchet MS", "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+header {
+    background-color: #1a1f27;
+    padding: 20px;
+    text-align: center;
+}
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #2c3442;
+}
+footer {
+    background-color: #1a1f27;
+    padding: 20px;
+    text-align: center;
+}
+button {
+    background-color: #2c3442;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #3a4659;
+}
+a {
+    color: #5ad1ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 20px 10px;
+    }
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+img.small {
+    width: 150px;
+    height: auto;
+}
+img.large {
+    width: 300px;
+    height: auto;
+}
+.section-card {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.section-card h2,
+.section-card h1 {
+    letter-spacing: 0.3px;
+}
+.section-toggle {
+    margin: 12px 0 8px;
+    font-size: 0.95rem;
+}
+.section-content {
+    display: grid;
+    gap: 16px;
+}
+.collapsed .section-content {
+    display: none;
+}
+.zoomable {
+    cursor: zoom-in;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.zoomable:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+.back-to-top {
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 20;
+}
+.back-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background: linear-gradient(90deg, #5ad1ff, #ffb347);
+    z-index: 30;
+}
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 12, 18, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 40;
+}
+.lightbox.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.lightbox img {
+    max-width: min(90vw, 1000px);
+    max-height: 80vh;
+    border-radius: 14px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65);
+}
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.section-card.in-view {
+    animation: fadeUp 0.5s ease both;
+}
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
