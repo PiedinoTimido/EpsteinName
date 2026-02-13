@@ -22,22 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		nodesToMove.forEach((item) => wrapper.appendChild(item));
 		section.appendChild(wrapper);
-
-		if (section.id !== "introduction") {
-			const toggle = document.createElement("button");
-			toggle.type = "button";
-			toggle.className = "section-toggle";
-			toggle.textContent = "Collapse section";
-			toggle.setAttribute("aria-expanded", "true");
-
-			heading.insertAdjacentElement("afterend", toggle);
-
-			toggle.addEventListener("click", () => {
-				const collapsed = section.classList.toggle("collapsed");
-				toggle.textContent = collapsed ? "Expand section" : "Collapse section";
-				toggle.setAttribute("aria-expanded", String(!collapsed));
-			});
-		}
 	});
 
 	const scrollProgress = document.createElement("div");

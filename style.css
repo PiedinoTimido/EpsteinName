@@ -22,6 +22,21 @@ section {
     padding: 40px 20px;
     border-bottom: 1px solid #2c3442;
 }
+#introduction {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 20px 100px;
+}
+#introduction h1 {
+    font-size: clamp(2.8rem, 6vw, 4.2rem);
+    line-height: 1.05;
+    margin-bottom: 12px;
+}
+#introduction .section-content {
+    gap: 24px;
+}
 footer {
     background-color: #1a1f27;
     padding: 20px;
@@ -49,6 +64,13 @@ a:hover {
 @media (max-width: 768px) {
     header, section, footer {
         padding: 20px 10px;
+    }
+    #introduction {
+        min-height: auto;
+        padding: 70px 16px 60px;
+    }
+    #introduction .section-content {
+        gap: 18px;
     }
     button {
         width: 100%;
