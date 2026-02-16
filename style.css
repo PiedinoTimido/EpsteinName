@@ -170,10 +170,150 @@ img.large {
     border-radius: 14px;
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65);
 }
+.profiles-shell {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+.profiles-viewport {
+    overflow: hidden;
+    border-radius: 18px;
+}
+.profiles-track {
+    display: flex;
+    transition: transform 0.4s ease;
+    will-change: transform;
+}
+.profile-card {
+    flex: 0 0 100%;
+    background: rgba(18, 23, 32, 0.75);
+    border: 1px solid rgba(90, 209, 255, 0.2);
+    border-radius: 18px;
+    padding: 26px;
+    display: grid;
+    gap: 18px;
+}
+.profile-card h3 {
+    margin: 0;
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+.profile-meta {
+    display: grid;
+    gap: 6px;
+    font-size: 0.98rem;
+    color: #c8d3ea;
+}
+.profile-media {
+    display: grid;
+    gap: 10px;
+}
+.profile-media img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.profile-description {
+    min-height: 110px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(10, 12, 18, 0.6);
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    color: #d7e0f4;
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+.profile-warning {
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: rgba(255, 179, 71, 0.12);
+    border: 1px solid rgba(255, 179, 71, 0.35);
+    color: #ffe2b2;
+    box-shadow: inset 0 0 0 1px rgba(255, 179, 71, 0.1);
+}
+.profile-warning h4 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    letter-spacing: 0.3px;
+    color: #ffb347;
+    text-transform: uppercase;
+}
+.profile-warning p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.5;
+}
+.profile-actions {
+    display: flex;
+    justify-content: flex-start;
+}
+.profile-actions .wiki-button {
+    margin-top: 4px;
+}
+.wiki-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 999px;
+    background: linear-gradient(120deg, #5ad1ff, #ffb347);
+    color: #0c0f14;
+    font-weight: 600;
+    text-decoration: none;
+}
+.wiki-button:hover {
+    text-decoration: none;
+    filter: brightness(1.05);
+}
+.wiki-button.disabled {
+    background: rgba(90, 98, 112, 0.5);
+    color: #d0d6e6;
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: none;
+}
+.profiles-arrow {
+    background: rgba(44, 52, 66, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #f4f7ff;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.profiles-arrow:hover {
+    transform: translateY(-2px);
+    background: rgba(58, 70, 89, 0.9);
+}
+.profiles-counter {
+    margin-top: 10px;
+    text-align: center;
+    color: #aebad3;
+    font-size: 0.95rem;
+}
 .lightbox-close {
     position: absolute;
     top: 20px;
     right: 20px;
+}
+@media (max-width: 768px) {
+    .profiles-shell {
+        grid-template-columns: 1fr;
+    }
+    .profiles-arrow {
+        width: 100%;
+        border-radius: 999px;
+    }
+    .profiles-viewport {
+        order: -1;
+    }
 }
 .section-card.in-view {
     animation: fadeUp 0.5s ease both;

@@ -25,7 +25,7 @@
         <h1>Epstein Names</h1>
         <p>A data analysis project to explore famous names in the database of the Epstein files.</p>
         <p>Before starting, you can download the CSV file containing the names we selected by clicking below.</p>
-        <p>👉<a href="https://docs.google.com/spreadsheets/d/1eFYQOLw4lBXqlA-V7l4ZyrLSBpu0zyXdQPQLZES5Z_I/export?format=csv" target="_blank">Click me!</a>👈</p>
+        <p>👉<a href="https://docs.google.com/spreadsheets/d/1eFYQOLw4lBXqlA-V7l4ZyrLSBpu0zyXdQPQLZES5Z_I/export?format=csv" target="_blank">Click me to Download!</a>👈 Or 👉<a href="https://docs.google.com/spreadsheets/d/1eFYQOLw4lBXqlA-V7l4ZyrLSBpu0zyXdQPQLZES5Z_I/edit?usp=sharing" target="_blank">Click me to view the spreadsheet!</a>👈</p>
     </section>
     <section id="name-mentions">
         <h2>Name Mentions</h2>
@@ -53,37 +53,19 @@
             Are we surprised by this? Not really, but it's good to see it in numbers. Now let's dive deeper.
         </p>
     </section>
-    <section id="Wiki">
-        <h2>Wikipedia Pages</h2>
-        <p>In this section, you can open all of the Wikipedia pages, if there are any, of the people who are mentioned in the database.</p>
-        <section id="Links">
-            Jeffrey Epstein <a href="https://en.wikipedia.org/wiki/Jeffrey_Epstein" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Ghislaine Maxwell <a href="https://en.wikipedia.org/wiki/Ghislaine_Maxwell" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Virginia Giuffre <a href="https://en.wikipedia.org/wiki/Virginia_Giuffre" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Prince Andrew <a href="https://en.wikipedia.org/wiki/Prince_Andrew,_Duke_of_York" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Bill Clinton <a href="https://en.wikipedia.org/wiki/Bill_Clinton" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Donald Trump <a href="https://en.wikipedia.org/wiki/Donald_Trump" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Alan Dershowitz <a href="https://en.wikipedia.org/wiki/Alan_Dershowitz" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Johanna Sjoberg <a href="https://en.wikipedia.org/wiki/Johanna_Sjoberg" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Sarah Kellen <a href="https://en.wikipedia.org/wiki/Sarah_Kellen" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Adriana Ross <a href="https://en.wikipedia.org/wiki/Adriana_Ross" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Nadia Marcinkova <a href="https://en.wikipedia.org/wiki/Nadia_Marcinkova" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Annie Farmer <a href="https://en.wikipedia.org/wiki/Annie_Farmer" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Les Wexner <a href="https://en.wikipedia.org/wiki/Les_Wexner" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Jean-Luc Brunel <a href="https://en.wikipedia.org/wiki/Jean-Luc_Brunel" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Al Gore <a href="https://en.wikipedia.org/wiki/Al_Gore" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Kevin Spacey <a href="https://en.wikipedia.org/wiki/Kevin_Spacey" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Chris Tucker <a href="https://en.wikipedia.org/wiki/Chris_Tucker" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Stephen Hawking <a href="https://en.wikipedia.org/wiki/Stephen_Hawking" target="_blank" class="wiki-link">Wiki Page</a><br>
-            George Mitchell <a href="https://en.wikipedia.org/wiki/George_J._Mitchell" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Bill Richardson <a href="https://en.wikipedia.org/wiki/Bill_Richardson" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Glenn Dubin <a href="https://en.wikipedia.org/wiki/Glenn_Dubin" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Lawrence Summers <a href="https://en.wikipedia.org/wiki/Lawrence_Summers" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Woody Allen <a href="https://en.wikipedia.org/wiki/Woody_Allen" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Ehud Barak <a href="https://en.wikipedia.org/wiki/Ehud_Barak" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Tony Blair <a href="https://en.wikipedia.org/wiki/Tony_Blair" target="_blank" class="wiki-link">Wiki Page</a><br>
-            Thomas Pritzker <a href="https://en.wikipedia.org/wiki/Thomas_Pritzker" target="_blank" class="wiki-link">Wiki Page</a><br>
-        </section>
+    <section id="profiles">
+        <h2>Profiles</h2>
+        <p>Browse the profiles extracted from the CSV. Use the arrows to move through the people. <br> The names of the victims are not always displayed in full, but they are included in the database, because of that, the image of the victim is not displayed.</p>
+        <p>Last Update: 15/02/2026</p>
+        <div class="profiles-shell" aria-label="Profiles carousel">
+            <button class="profiles-arrow" data-action="prev" type="button" aria-label="Previous profile">&#8592;</button>
+            <div class="profiles-viewport">
+                <div class="profiles-track"></div>
+            </div>
+            <button class="profiles-arrow" data-action="next" type="button" aria-label="Next profile">&#8594;</button>
+        </div>
+        <div class="profiles-counter" aria-live="polite"></div>
+    </section>
     </section>
     <section id="conclusion">
         <h2>Conclusion</h2>
