@@ -295,10 +295,10 @@ document.addEventListener("DOMContentLoaded", () => {
 			surname: "Zuckerman",
 			category: "Public Figure/Business",
 			count: 1661,
-			warning: "There isn't a wikipedia page for Mortimer Zuckerman. There isn't a description avalible because there aren't infos online!",
+			warning: "",
 			imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMi1iUTAGYwRQkVnf5wnsofigB85H3ACR4FQ&s",
-			wikiUrl: "",
-			description: "",
+			wikiUrl: "https://en.wikipedia.org/wiki/Mortimer_Zuckerman",
+			description: "Zuckerman took part in a birthday book for Jeffrey Epstein's 50th birthday and was recognized as one of Epstein's clients, paying him millions for financial services after his conviction.",
 		},
 		{
 			name: "Doug",
@@ -650,3 +650,4 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 });
+
