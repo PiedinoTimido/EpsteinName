@@ -85,9 +85,9 @@ document.addEventListener("DOMContentLoaded", () => {
             surname: "Kellen",
             category: "Staff/Assistant",
             count: 2,
-            warning: "The Wikipedia page is programmed for deletion!",
+            warning: "There  isn't a wikipedia page for Sarah Kellen!",
             imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaFdVZuYyJYBlgYz4H5xenFoVFT0Z_Oeny_ubG9vrJfuDK-Qaa43fU5CO2gy04wcg4-CfqDc_VcFnhzeKLPzdnopsl-DlAJA0vUWrCct1f&s=10",
-            wikiUrl: "https://en.wikipedia.org/wiki/Sarah_Kellen",
+            wikiUrl: "",
             description: "A former employee and personal assistant to Epstein. She was named in various court documents and by victims as an individual involved in managing Epstein's daily schedule and logistics.",
         },
         {
@@ -650,4 +650,5 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 });
+
 
